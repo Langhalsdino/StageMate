@@ -40,6 +40,11 @@ Leave a star if you like the idea :)
 StageMate consists out of 3 modules. The First is **audio processing and transcription module**, that uses a sliding window approach in order to accomplish real time transcription with the speech to text APIs by Microsoft Azure. <br>
 The second module contains the logic for **matching transcribed text to speaker notes** and emits events to the **presenter view**, the third module. It is a custom implementation of the presenter view for the presentation tool reveal.js.
 
+The following gif animation shows all three parts in action:
+
+![](./assets/StageMateDemo.gif)
+
+
 ## Setup
 In order to setup StageMate you will need to setup the node.js server and start the python script that transcribes your audio.
 
