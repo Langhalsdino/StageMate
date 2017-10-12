@@ -10,18 +10,18 @@ We live in a time where you can have reasonable conversations with your computer
 
 ## Table of Contents
 
-  * [What can your StageMate do?](#What-can-your-StageMate-do?)
-  * [How we build it](#How-we-build-it)
-  * [Setup](#Setup)
+  * [What can your StageMate do?](#what-can-your-stagemate-do?)
+  * [How we build it](#how-we-build-it)
+  * [Setup](#setup)
     - [Setup the presentation with node.js]
     - [Setup audio transcription with python]
     - [Connect the audio transcription to node.js]
-  * [How to use StageMate](#How-to-use-StageMate)
-    - [Change target presentation]()
-    - [Change transcription configuration]()
-  * [What we learned](#What-we-learned)
-  * [Common issues](#Common-issues)
-  * [Authors](#Authors)
+  * [How to use StageMate](#how-to-use-stageMate)
+    - [Change target presentation]
+    - [Change transcription configuration]
+  * [What we learned](#what-we-learned)
+  * [Common issues](#common-issues)
+  * [Authors](#authors)
 
 ## What can your StageMate do?
 ![](./assets/WhatIsStageMate.png)
@@ -49,7 +49,7 @@ npm install
 ```
 Start the StageMate Node.js server and checkout our default presentation with the special presenter view.
 ```
-npm Start
+npm start
 ```
 The **presentation** can be found here [localhost:3000/presentation](http://localhost:3000/presentation) and the **presenter view** here [localhost:3000/](http://localhost:3000/).
 

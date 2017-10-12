@@ -35,6 +35,8 @@ const loadConfig = function(){
 };
 
 const matchBuzzwordsAgainst = function(text){
+
+
     let words = text_helper.splitTextToList(text)
 
     let current_notes = [];
@@ -68,6 +70,8 @@ const matchBuzzwordsAgainst = function(text){
         sendToFrontend('update', {"slide": data.current_slide, "finished": data.finished, "slides": data.slides})
         data.changesToPush = false;
     }
+};
+
 
 const deleteIfEmpty = function(note, index, array){
     if (note.remaining.length === 0){
@@ -131,6 +135,9 @@ const onFrontendConnected = function(ws){
   sendInitToFrontend();
   initSlideControl();
 };
+
+
+
 
 module.exports = {
   onInit,

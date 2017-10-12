@@ -7,8 +7,8 @@
         "build-stage-mate": "cd stageMateApp; webpack",
         "start": "npm run build-stage-mate && node index.js"
     },
-    "author": "",
-    "license": "ICT",
+    "author": "Timo, Enrico, Frederic, Jonas",
+    "license": "MIT",
     "dependencies": {
         "angular": "^1.6.6",
         "angular-chart.js": "^1.1.1",
