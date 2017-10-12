@@ -10,7 +10,7 @@ We live in a time where you can have reasonable conversations with your computer
 
 ## Table of Contents
 
-  * [What can your StageMate do?](#what-can-your-stagemate-do?)
+  * [What can your StageMate do?](#what-can-your-stagemate-do)
   * [How we build it](#how-we-build-it)
   * [Setup](#setup)
     - [Setup the presentation with node.js]
@@ -24,12 +24,14 @@ We live in a time where you can have reasonable conversations with your computer
   * [Authors](#authors)
 
 ## What can your StageMate do?
-![](./assets/WhatIsStageMate.png)
+![](./assets/WhatIsStageMate.png)<br>
 StageMate listens to your speech and tries to match your speech to your notes and slides.<br>
 Therefore, it can **proceed to the next slide**, **track your time** and **tell you whether you missed the point or not**.
 
 If you do not believe us, check out this YouTube video of one of our first tests. We played some Buzzword Bingo with StageMate without manual interventions. **It's fully autonomous!**  
-[![Demo](http://img.youtube.com/vi/ndpWiEG0GqM/0.jpg)](https://youtu.be/ndpWiEG0GqM)
+
+[![Demo](http://img.youtube.com/vi/ndpWiEG0GqM/0.jpg)](https://youtu.be/ndpWiEG0GqM)<br>
+
 Leave a star if you like the idea :)
 
 ## How we build it
@@ -64,7 +66,7 @@ pip install pyaudio
 pip install SpeechRecognition
 ```
 
-Now your need to add some Bing Speech API keys to the Key Array ([audioTranscription.py](./AudioTranscription/audioTransciption.py) `line 20`). The needed amount varies according to the selected `DELTA` value, in order to get no `to many request` response. A Reccomendation might be around `4/DELTA`.<br>
+Now your need to add some Bing Speech API keys to the Key Array ([audioTranscription.py](./AudioTranscription/audioTransciption.py) `line 20`). The needed amount varies according to the selected `DELTA` value, in order to get no `to many request` response. A Recommendation might be around `4/DELTA`.<br>
 You can get two keys with your GitHub account to try the [Bing Speech API](https://azure.microsoft.com/en-us/try/cognitive-services/) service.
 
 After the installation you can try the script by simply starting it from the command line.
@@ -73,21 +75,21 @@ python ./AudioTranscription/audioTransciption.py
 ```
 You can see the results of the transcription of each sliding window in the command line.
 
-If you want to tune the amount of sliding windows and there length, check out the comments in the [audioTranscription.py](./AudioTranscription/audioTransciption.py) script.
+If you want to tune the amount of sliding windows and their length, check out the comments in the [audioTranscription.py](./AudioTranscription/audioTransciption.py) script.
 Furthermore, you can change the microphone by its `AUDIO_DEVICE_INDEX` ([audioTranscription.py](./AudioTranscription/audioTransciption.py) `line 38`) according to the PyAudio definition.
 
 ### Connect the audio transcription to node.js
 In order to **enable the python script to send the transcription to the node.js server**, we need to expose the [localhost:3000/speech](http://localhost:3000/speech) API to the python script.
 
 If you are using the **same computer** for the node.js server and the python script you do not need to change anything. <br>
-If you run them on **different computers**, you will need to change the IP of the server in the python script according to their new value ([audioTranscription.py](./AudioTranscription/audioTransciption.py) `line 44`).
+If you run them on **different computers**, you will need to change the `IP` of the server in the python script according to their new value ([audioTranscription.py](./AudioTranscription/audioTransciption.py) `line 44`).
 
 Congratulation 🎉 you **completed the setup process** of StageMate and can try it with our demo slides.
 When you mention the keywords as described by the bullet points on the **presenter view** it will proceed in the presentation.
 We loved to play Buzzword Bingo, even though there was some latency in the system.
 
 ## How to use StageMate
-Let's start with the interesting section. I imaging, after setting up the system and trying out our demo, you want to **use your own slides and bullet points**.
+Let's start with the interesting section. I imaging, after setting up the system and trying our demo, you want to **use your own slides and bullet points**.<br>
 There are two configurations, you will need to make. **Design your Reaveal.js slides** and **configure the keywords and their actions** in the presentation.
 
 ### Change target presentation
@@ -160,7 +162,7 @@ The Bing speech API has a **limit for API requests**, therefore it might be help
 
 ## Authors
 
-- **Frederic Tausch** @Langhalsdino
-- **Timo Schneider** @tschneid
-- **Enrico Kaack** @enrico-kaack
-- **Jonas Fuchs** @Jonasfuchs
+- **Frederic Tausch** @[Langhalsdino](https://github.com/Langhalsdino)
+- **Timo Schneider** @[tschneid](https://github.com/tschneid)
+- **Enrico Kaack** @[enrico-kaack](https://github.com/enrico-kaack)
+- **Jonas Fuchs** @[Jonasfuchs](https://github.com/Jonasfuchs)
