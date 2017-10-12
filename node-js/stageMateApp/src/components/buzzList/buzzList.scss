@@ -1,0 +1,28 @@
+li.bullet {
+  font-size: 24px;
+  margin-bottom: 24px;
+
+  &.bullet-completed {
+    text-decoration: line-through;
+    color: #bbb;
+  }
+}
+
+span.time-difference {
+  &.time-difference-negative {
+    color: red;
+  }
+  &.time-difference-positive {
+    color: green;
+  }
+}
+
+span.buzzword {
+  font-weight: bold;
+  margin-right: 10px;
+  font-size: 18px;
+  &.buzzword-completed {
+    text-decoration: line-through;
+    color: #bbb;
+  }
+}

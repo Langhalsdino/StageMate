@@ -1,0 +1,30 @@
+{
+    "name": "StageMate",
+    "version": "1.0.0",
+    "description": "Intelligent presentation framework",
+    "main": "index.js",
+    "scripts": {
+        "build-stage-mate": "cd stageMateApp; webpack",
+        "start": "npm run build-stage-mate && node index.js"
+    },
+    "author": "",
+    "license": "ICT",
+    "dependencies": {
+        "angular": "^1.6.6",
+        "angular-chart.js": "^1.1.1",
+        "body-parser": "^1.18.2",
+        "chart.js": "^2.7.0",
+        "css-loader": "^0.28.7",
+        "express": "^4.16.1",
+        "mustache": "^2.3.0",
+        "node-sass": "^4.5.3",
+        "node-uuid": "^1.4.8",
+        "raw-loader": "^0.5.1",
+        "reveal.js": "^3.5.0",
+        "sass-loader": "^6.0.6",
+        "socket.io": "^2.0.3",
+        "style-loader": "^0.19.0",
+        "webpack": "^3.6.0",
+        "ws": "^3.2.0"
+    }
+}

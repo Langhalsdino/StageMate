@@ -1,0 +1,305 @@
+[{
+        "slide": 0,
+        "notes": [{
+            "type": "buzzword",
+            "order": 0,
+            "text": "Welcome",
+            "data": [
+                "welcome",
+                "presentation",
+                "adventure",
+                "ready"
+            ],
+            "postactions": [
+                "nextSlide"
+            ]
+        }]
+    },
+    {
+        "slide": 1,
+        "notes": [{
+                "type": "buzzword",
+                "order": 0,
+                "text": "wrecked situation / empty battery",
+                "data": [
+                    "wrecked",
+                    "battery"
+                ],
+                "postactions": [
+                    "hideBlock"
+                ]
+            },
+            {
+                "type": "buzzword",
+                "order": 1,
+                "text": "sweaty hands, unintended clicks",
+                "data": [
+                    "sweaty",
+                    "click"
+                ],
+                "postactions": [
+                    "hideBlock"
+                ]
+            },
+            {
+                "type": "buzzword",
+                "order": 2,
+                "text": "Transition: Our Promise",
+                "data": [
+                    "promise"
+                ],
+                "postactions": [
+                    "nextSlide"
+                ]
+            }
+        ]
+    },
+    {
+        "slide": 2,
+        "notes": [{
+                "type": "buzzword",
+                "order": 0,
+                "text": "Title",
+                "data": [
+                    "clear"
+                ],
+                "postactions": [
+                    "triggerAnimation"
+                ]
+            },
+            {
+                "type": "buzzword",
+                "order": 1,
+                "text": "1st Bullets",
+                "data": [
+                    "reminder",
+                    "trigger"
+                ],
+                "postactions": [
+                    "triggerAnimation"
+                ]
+            },
+            {
+                "type": "buzzword",
+                "order": 2,
+                "text": "2nd Bullets",
+                "data": [
+                    "jump to the next slide",
+                    "your time"
+                ],
+                "postactions": [
+                    "hideBlock"
+                ]
+            },
+            {
+                "type": "buzzword",
+                "order": 3,
+                "text": "Transition: How does it work?",
+                "data": [
+                    "how does it work"
+                ],
+                "postactions": [
+                    "nextSlide"
+                ]
+            }
+        ]
+    },
+    {
+        "slide": 3,
+        "notes": [{
+                "type": "buzzword",
+                "order": 0,
+                "text": "Input / Process",
+                "data": [
+                    "notes",
+                    "voice recognition"
+                ],
+                "postactions": [
+                    "triggerAnimation"
+                ]
+            },
+            {
+                "type": "buzzword",
+                "order": 1,
+                "text": "Output / Outcome",
+                "data": [
+                    "speaker"
+                ],
+                "postactions": [
+                    "hideBlock"
+                ]
+            },
+            {
+                "type": "buzzword",
+                "order": 2,
+                "text": "Transition: Whats under the hood?",
+                "data": [
+                    "under the hood"
+                ],
+                "postactions": [
+                    "nextSlide"
+                ]
+            }
+        ]
+    },
+    {
+        "slide": 4,
+        "notes": [{
+                "type": "buzzword",
+                "order": 0,
+                "text": "Web API",
+                "data": [
+                    "web"
+                ],
+                "postactions": [
+                    "hideBlock"
+                ]
+            },
+            {
+                "type": "buzzword",
+                "order": 1,
+                "text": "Business",
+                "data": [
+                    "business"
+                ],
+                "postactions": [
+                    "nextSlide"
+                ]
+            }
+        ]
+    },
+    {
+        "slide": 5,
+        "notes": [{
+            "type": "buzzword",
+            "order": 0,
+            "text": "Bingo!",
+            "data": [
+                "bingo"
+            ],
+            "postactions": [
+                "nextSlide"
+            ]
+        }]
+    },
+    {
+        "slide": 6,
+        "notes": [{
+                "type": "buzzword",
+                "order": 0,
+                "text": "unicorn business",
+                "data": [
+                    "unicorn"
+                ],
+                "postactions": [
+                    "triggerAnimation"
+                ]
+            },
+            {
+                "type": "buzzword",
+                "order": 1,
+                "text": "Machine learning algorithm",
+                "data": [
+                    "machine learning"
+                ],
+                "postactions": [
+                    "triggerAnimation"
+                ]
+            },
+            {
+                "type": "buzzword",
+                "order": 2,
+                "text": "Blockchain",
+                "data": [
+                    "blockchain"
+                ],
+                "postactions": [
+                    "triggerAnimation"
+                ]
+            },
+            {
+                "type": "buzzword",
+                "order": 3,
+                "text": "Win Win",
+                "data": [
+                    "win win"
+                ],
+                "postactions": [
+                    "triggerAnimation"
+                ]
+            },
+            {
+                "type": "buzzword",
+                "order": 4,
+                "text": "Scalable",
+                "data": [
+                    "scalable"
+                ],
+                "postactions": [
+                    "triggerAnimation"
+                ]
+            },
+            {
+                "type": "buzzword",
+                "order": 5,
+                "text": "Disruptive",
+                "data": [
+                    "disruptive"
+                ],
+                "postactions": [
+                    "triggerAnimation"
+                ]
+            },
+            {
+                "type": "buzzword",
+                "order": 6,
+                "text": "Hockey Stick",
+                "data": [
+                    "hockey",
+                    "stick"
+                ],
+                "postactions": [
+                    "triggerAnimation"
+                ]
+            },
+            {
+                "type": "buzzword",
+                "order": 7,
+                "text": "Final Buzzword - Bingo!",
+                "data": [
+                    "hyper"
+                ],
+                "postactions": [
+                    "triggerAnimation"
+                ]
+            },
+            {
+                "type": "buzzword",
+                "order": 8,
+                "text": "Transition: You got your invest",
+                "data": [
+                    "invest"
+                ],
+                "postactions": [
+                    "nextSlide"
+                ]
+            }
+        ]
+    },
+    {
+        "slide": 7,
+        "notes": [{
+            "type": "buzzword",
+            "order": 0,
+            "text": "Closing",
+            "data": [
+                "walk the plank",
+                "question"
+            ],
+            "postactions": [
+                "nextSlide"
+            ]
+        }]
+    }
+
+]

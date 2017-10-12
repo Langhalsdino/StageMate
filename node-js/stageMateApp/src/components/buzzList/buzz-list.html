@@ -1,0 +1,31 @@
+<h1>Slide {{vm.slideNo}}</h1>
+<hr>
+
+<ul ng-repeat="noteList in vm.currentNoteList">
+  <li
+    ng-repeat="bullet in noteList.notes"
+    class="bullet"
+    ng-class="{'bullet-completed': bullet.completed}"
+    ng-click="vm.onBulletClick(bullet)">
+
+    {{bullet.text}}
+    <span
+      class="time-difference"
+      ng-class="{'time-difference-negative': bullet.timeDifference < 0, 'time-difference-positive': bullet.timeDifference >= 0}">
+      {{bullet.timeDifference}}
+    </span>
+    <div>
+      <span class="buzzword" ng-class="{'buzzword-completed': !bullet.remaining.includes(buzzword.toLowerCase())}" ng-repeat="buzzword in bullet.data">
+        {{buzzword}}
+      </span>
+    </div>
+
+  </li>
+</ul>
+
+
+<!-- <button class="btn btn-default" ng-click="vm.previousSlide()"><i class="fa fa-caret-left"></i></button>
+<button class="btn btn-default" ng-click="vm.nextSlide()"><i class="fa fa-caret-right"></i></button> -->
+
+
+<!-- <pre>{{vm.currentNoteList | json}}</pre> -->

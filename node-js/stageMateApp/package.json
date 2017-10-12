@@ -1,0 +1,29 @@
+{
+  "name": "StageMate",
+  "version": "1.0.0",
+  "description": "Stage Mate Angular App",
+  "main": "./scr/app.js",
+  "scripts": {
+    "test": "test",
+    "start": "node src/app.js",
+    "dev": "webpack && webpack-dev-server"
+  },
+  "author": "luc",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.6.6",
+    "angular-chart.js": "^1.1.1",
+    "angular-socket-io": "^0.7.0",
+    "css-loader": "^0.28.7",
+    "socket.io": "^2.0.3",
+    "style-loader": "^0.18.2"
+  },
+  "devDependencies": {
+    "bootstrap": "^3.3.7",
+    "node-sass": "^4.5.3",
+    "raw-loader": "^0.5.1",
+    "sass-loader": "^6.0.6",
+    "webpack": "^3.6.0",
+    "webpack-dev-server": "^2.7.1"
+  }
+}
