@@ -1,17 +1,17 @@
 ![](./assets/StageMate.jpg)
 
-The main idea and motivation behind StageMate is to assist you while pitching your idea. It will cover all aspects of your pitch from skipping slides to reminding you if you miss some major point.<br>
-Furthermore, **it will keep an eye on you, so that you stay in time**.
+The main idea and motivation behind StageMate is to assist you while pitching your idea. It covers all aspects of your pitch from skipping slides to reminding you if you miss some major point.<br>
+Furthermore, **it will keep an eye on you so that you stay in time**.
 
 **Our Inspiration**<br>
-We live in a time where you can have reasonable conversations with your computer, but you still need to ask a friend to sit in the audience, to give you feedback on your presentation. Why can’t your computer do this by itself?
+We live in a time where you can have reasonable conversations with your computer, but you still need to ask a friend to sit in the audience to give you feedback on your presentation. Why can’t your computer do this too?
 
-**StageMate will solve this issue and be the smart assistant for your pitch.**
+**StageMate solves this issue and is your smart pitch-assistant.**
 
 ## Table of Contents
 
   * [What can your StageMate do?](#what-can-your-stagemate-do)
-  * [How we build it](#how-we-build-it)
+  * [How we built it](#how-we-built-it)
   * [Setup](#setup)
     - [Setup the presentation with node.js]
     - [Setup audio transcription with python]
@@ -28,16 +28,16 @@ We live in a time where you can have reasonable conversations with your computer
 StageMate listens to your speech and tries to match your speech to your notes and slides.<br>
 Therefore, it can **proceed to the next slide**, **track your time** and **tell you whether you missed the point or not**.
 
-If you do not believe us, check out this YouTube video of one of our first tests. We played some Buzzword Bingo with StageMate without manual interventions. **It's fully autonomous!**  
+If you do not believe us, check out this YouTube video of one of our first tests. We played some Buzzword Bingo with StageMate without manual interventions. **It's fully autonomous!**
 
 [![Demo](http://img.youtube.com/vi/ndpWiEG0GqM/0.jpg)](https://youtu.be/ndpWiEG0GqM)<br>
 
 Leave a star if you like the idea :)
 
-## How we build it
+## How we built it
 ![Our journey of building StageMate](./assets/StructureOfStageMate.png)
 
-StageMate consists out of 3 modules. The First is **audio processing and transcription module**, that uses a sliding window approach in order to accomplish real time transcription with the speech to text APIs by Microsoft Azure. <br>
+StageMate consists of 3 modules. The first is a **audio processing and transcription module** that uses a sliding window approach in order to accomplish real time transcription with the speech to text APIs by Microsoft Azure. <br>
 The second module contains the logic for **matching transcribed text to speaker notes** and emits events to the **presenter view**, the third module. It is a custom implementation of the presenter view for the presentation tool reveal.js.
 
 The following gif animation shows all three parts in action:
@@ -60,10 +60,10 @@ npm start
 ```
 The **presentation** can be found here [localhost:3000/presentation](http://localhost:3000/presentation) and the **presenter view** here [localhost:3000/](http://localhost:3000/).
 
-You can navigate through the slides and uses the backup method of clicking on points check them in the presenter view.
+You can navigate through the slides and use the backup method of clicking on points to check them in the presenter view.
 
 ### Setup audio transcription with python
-First of all you need to make sure, that you installed python ([download here](https://www.python.org/downloads/)) and pip ([How to install pip](https://pip.pypa.io/en/stable/installing/)). <br>
+First of all you need to make sure that you installed python ([download here](https://www.python.org/downloads/)) and pip ([How to install pip](https://pip.pypa.io/en/stable/installing/)). <br>
 Afterwards we install all the needed dependencies of the python script with pip.
 ```
 pip install requests
@@ -71,7 +71,7 @@ pip install pyaudio
 pip install SpeechRecognition
 ```
 
-Now your need to add some Bing Speech API keys to the Key Array ([audioTranscription.py](./AudioTranscription/audioTransciption.py) `line 20`). The needed amount varies according to the selected `DELTA` value, in order to get no `to many request` response. A Recommendation might be around `4/DELTA`.<br>
+Now you need to add some Bing Speech API keys to the Key Array ([audioTranscription.py](./AudioTranscription/audioTransciption.py) `line 20`). The needed amount varies depending on the selected `DELTA` value, in order to get no `to many request` response. A recommendation might be around `4/DELTA`.<br>
 You can get two keys with your GitHub account to try the [Bing Speech API](https://azure.microsoft.com/en-us/try/cognitive-services/) service.
 
 After the installation you can try the script by simply starting it from the command line.
@@ -95,13 +95,13 @@ We loved to play Buzzword Bingo, even though there was some latency in the syste
 
 ## How to use StageMate
 Let's start with the interesting section. I imaging, after setting up the system and trying our demo, you want to **use your own slides and bullet points**.<br>
-There are two configurations, you will need to make. **Design your Reaveal.js slides** and **configure the keywords and their actions** in the presentation.
+There are two configurations you need to make. **Design your Reveal.js slides** and **configure the keywords and their actions** in the presentation.
 
 ### Change target presentation
-Since StageMate is build on top of Reveal.js you can use any Reaveal.js presentation.
-You only need to replace the `node-js/presentation.html` file with your Reaveal.js presentation.
+Since StageMate is build on top of Reveal.js you can use any Reveal.js presentation.
+You only need to replace the `node-js/presentation.html` file with your Reveal.js presentation.
 
-Reaveal.js presentations are written using HTML or Markdown but there's also an online editor for those of you who prefer a graphical interface (e.g. [slides.com](https://slides.com)).
+Reveal.js presentations are written using HTML or Markdown but there's also an online editor for those of you who prefer a graphical interface (e.g. [slides.com](https://slides.com)).
 
 ### Change transcription configuration
 The transcription configuration contains the **information about each point on the slides and their following actions**. <br>
@@ -151,12 +151,12 @@ The structure of the file can be created according the following template and sh
 }]
 ```
 
-Now you know everything that is needed to use StageMate with your own presentations.
-Enjoy our small tool, we coded during the 24h InnoHack 2017 Hackathon.
+Now you know everything that is needed to use StageMate for your own presentations.
+Enjoy our small tool that we coded during the 24h InnoHack 2017 Hackathon.
 
 ## What we learned
 **StageMate is a Hackathon project** and was build in **< 24h** since we managed to get some sleep (I know this is not the real Hackathon experience 😨). <br>
-Besides the knowledge progress in the used technologies, we have learned to work in a team and to face and overcame the challenges.
+Besides the knowledge progress in the used technologies, we have learned to work in a team and to face and overcome the challenges.
 
 ## Common issues
 Here are some of the **common issues** we encountered while setting up StageMate.
