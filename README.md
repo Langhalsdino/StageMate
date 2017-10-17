@@ -37,7 +37,7 @@ Leave a star if you like the idea :)
 ## How we built it
 ![Our journey of building StageMate](./assets/StructureOfStageMate.png)
 
-StageMate consists of 3 modules. The first is a **audio processing and transcription module** that uses a sliding window approach in order to accomplish real time transcription with the speech to text APIs by Microsoft Azure. <br>
+StageMate consists of 3 modules. The first is an **audio processing and transcription module** that uses a sliding window approach in order to accomplish real-time transcription with the speech to text APIs by Microsoft Azure. <br>
 The second module contains the logic for **matching transcribed text to speaker notes** and emits events to the **presenter view**, the third module. It is a custom implementation of the presenter view for the presentation tool reveal.js.
 
 The following gif animation shows all three parts in action:
@@ -46,7 +46,7 @@ The following gif animation shows all three parts in action:
 
 
 ## Setup
-In order to setup StageMate you will need to setup the node.js server and start the python script that transcribes your audio.
+In order to setup StageMate, you will need to setup the node.js server and start the python script that transcribes your audio.
 
 ### Setup the presentation with node.js
 Navigate into the `node-js` directory and install all node dependencies.
@@ -63,8 +63,8 @@ The **presentation** can be found here [localhost:3000/presentation](http://loca
 You can navigate through the slides and use the backup method of clicking on points to check them in the presenter view.
 
 ### Setup audio transcription with python
-First of all you need to make sure that you installed python ([download here](https://www.python.org/downloads/)) and pip ([How to install pip](https://pip.pypa.io/en/stable/installing/)). <br>
-Afterwards we install all the needed dependencies of the python script with pip.
+First of all, you need to make sure that you installed python ([download here](https://www.python.org/downloads/)) and pip ([How to install pip](https://pip.pypa.io/en/stable/installing/)). <br>
+Afterwards, we install all the needed dependencies of the python script with pip.
 ```
 pip install requests
 pip install pyaudio
@@ -74,7 +74,7 @@ pip install SpeechRecognition
 Now you need to add some Bing Speech API keys to the Key Array ([audioTranscription.py](./AudioTranscription/audioTransciption.py) `line 20`). The needed amount varies depending on the selected `DELTA` value, in order to get no `to many request` response. A recommendation might be around `4/DELTA`.<br>
 You can get two keys with your GitHub account to try the [Bing Speech API](https://azure.microsoft.com/en-us/try/cognitive-services/) service.
 
-After the installation you can try the script by simply starting it from the command line.
+After the installation, you can try the script by simply starting it from the command line.
 ```
 python ./AudioTranscription/audioTransciption.py
 ```
@@ -107,7 +107,7 @@ Reveal.js presentations are written using HTML or Markdown but there's also an o
 The transcription configuration contains the **information about each point on the slides and their following actions**. <br>
 The JSON file `node-js/processing/sample_data.json` contains this configuration and can be adjusted to your needs.
 
-The structure of the file can be created according the following template and should be straight forward to adapt.
+The structure of the file can be created according to the following template and should be straight forward to adapt.
 ```json
 [{
         "slide": 0,
@@ -162,7 +162,7 @@ Besides the knowledge progress in the used technologies, we have learned to work
 Here are some of the **common issues** we encountered while setting up StageMate.
 If you find an issue, we hope this might be helpful for you. Otherwise, please create a new issue.
 
-### Bing API - to many request
+### Bing API - to many requests
 The Bing speech API has a **limit for API requests**, therefore it might be helpful to generate more than one Bing API key to get a better performance out of the system.
 
 ## Authors
