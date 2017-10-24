@@ -13,12 +13,12 @@ We live in a time where you can have reasonable conversations with your computer
   * [What can your StageMate do?](#what-can-your-stagemate-do)
   * [How we built it](#how-we-built-it)
   * [Setup](#setup)
-    - [Setup the presentation with node.js]
-    - [Setup audio transcription with python]
-    - [Connect the audio transcription to node.js]
-  * [How to use StageMate](#how-to-use-stageMate)
-    - [Change target presentation]
-    - [Change transcription configuration]
+    - [Setup the presentation with node.js](#setup-the-presentation-with-nodejs)
+    - [Setup audio transcription with python](#setup-audio-transcription-with-python)
+    - [Connect the audio transcription to node.js](#connect-the-audio-transcription-to-nodejs)
+  * [How to use StageMate](#how-to-use-stagemate)
+    - [Change target presentation](#change-target-presentation)
+    - [Change transcription configuration](#change-transcription-configuration)
   * [What we learned](#what-we-learned)
   * [Common issues](#common-issues)
   * [Authors](#authors)
@@ -32,7 +32,7 @@ If you do not believe us, check out this YouTube video of one of our first tests
 
 [![Demo](http://img.youtube.com/vi/ndpWiEG0GqM/0.jpg)](https://youtu.be/ndpWiEG0GqM)<br>
 
-Leave a star if you like the idea :)
+Leave a star if you like the idea :
 
 ## How we built it
 ![Our journey of building StageMate](./assets/StructureOfStageMate.png)
